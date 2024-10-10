@@ -1,0 +1,457 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+
+}
+
+button{
+  cursor: pointer;
+}
+
+a:hover{
+  opacity: 0.8;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+html {
+  background-color: black;
+}
+
+/* Navbar */
+
+.navbar{
+  background-color: rgb(23, 24, 24);
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, #f32170, #ff6b08,#f0c423, #eedd44); 
+  border-image-slice: 1; 
+  padding: 10px;
+  z-index: 5;
+  transition: all 1s;
+}
+
+.kgp-logo{
+  background-image: linear-gradient(to right,#f32170, #ff6b08,#f0c423, #eedd44);
+  border-radius: 2px;
+  height: 50px;
+}
+
+.title{
+  /* border: 2px solid white; */
+  width: 50%;
+  /* display: flex;
+  align-items: center; */
+  position: absolute;
+  top: 18px;
+  left: 60px;
+  padding-left: 8px;
+  font-size: 30px;
+  font-weight: 400;
+  background: linear-gradient(to bottom, #f32170, #ff6b08,#f0c423, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.nav-list{
+  /* border: 2px solid white; */
+  width: 50%;
+  padding-right: 20px;
+  justify-content: right;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  right: 40px;
+}
+
+.nav-list li{
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-list li button {
+  background-color: rgb(0, 3, 5);
+  border: none;
+  font-size: 16px;
+  background: linear-gradient(to bottom, #f32170, #ff6b08,#f0c423, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  transition: font-size 500ms;
+}
+
+.nav-list li button:hover {
+  font-size: 19px; /* Increase font size on hover */
+  transition: font-size 500ms; /* Smooth transition for font size */
+}
+
+.burger{
+  display: none;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer; */
+}
+
+.line{
+  width: 33px;
+  background-image: linear-gradient(to top, #f32170, #ff6b08,#f0c423, #eedd44);
+  margin-bottom: 5px;
+  height: 4px;
+}
+
+
+/* Navbar */
+
+/* Body Content CSS */
+
+.constant-background-image{
+  position: fixed; /* Keeps the background fixed while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover; /* Ensures the image covers the area */
+  background-position: center;
+  opacity: 0.5; /* Set lower opacity for the background */
+  z-index: -1; /* Place it behind the content */
+  overflow: hidden;
+}
+
+
+
+
+/* Body Content CSS */
+
+/* Home Content CSS */
+.home-content{
+  z-index: 2;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+}
+
+.fest-title{
+  background: linear-gradient(to bottom, #f32170, #ff6b08,#f0c423, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  z-index: 2;
+  font-size: 100px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.club-name{
+  background: linear-gradient(to bottom, #f32170, #ff6b08,#f0c423, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  z-index: 2;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+
+/* Home Content CSS */
+
+
+/* About Us CSS */
+.about-description{
+  background: linear-gradient(to right, #f32170, #ff6b08,#f0c423, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  max-width: 70vw;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.fest-logo{
+  width: 10vw;
+}
+
+
+
+/* About Us CSS */
+
+
+/* Schedule Card */
+.schedule-content{
+
+}
+
+.s-card{
+  display: flex;
+  border: 2px solid white;
+  width: 65vw;
+  height: 120px;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  background: linear-gradient(to right, #f32170, #ff6b08,#f0c423, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.s-card:hover{
+  box-shadow: 6px 6px 4px rgb(249, 250, 250);
+}
+
+.date-box{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-right: 2px solid white;
+  font-size: 18px;
+}
+
+.detail-box{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+}
+
+.day-title{
+  font-size: 25px;
+  margin-bottom: 6px;
+}
+
+
+
+/* Register Button */
+
+.register-link{
+  background-image: linear-gradient(to right, #f32170, #ff6b08,#f0c423, #eedd44);
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.register-button{
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+
+
+/* Register Button */
+
+/* Registration Form */
+
+.reg-form{
+  color: white;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reg-form label{
+  padding: 10px;
+  font-size: 20px;
+  background: linear-gradient(to bottom, #f32170, #ff6b08,#f0c423, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.reg-form input{
+  padding: 5px 30px;
+  border: 4px solid rgb(31, 111, 192);
+  /* border-image: linear-gradient(to right, #04c8de, #fefdfb,#3a64f0, #010af6);  */
+  /* border-image-slice: 1; */
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.reg-form button{
+  padding: 10px;
+  width: 100px;
+  margin-top: 10px;
+  font-size: 20px;
+  background-image: linear-gradient(to top, #11a3c8, #085eff);
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+
+
+
+
+
+
+/* Responsive Design */
+
+@media (max-width: 1080px) {
+  .fest-title{
+    background: linear-gradient(to bottom, #f32170, #ff6b08,#f0c423, #eedd44);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    z-index: 2;
+    font-size: 70px;
+    font-weight: 600;
+  }
+  .register-button{
+    font-size: 70px;
+  }
+  .club-name{
+    background: linear-gradient(to bottom, #f32170, #ff6b08,#f0c423, #eedd44);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    z-index: 2;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .day-title{
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 870px) {
+  .fest-title{
+    background: linear-gradient(to bottom, #f32170, #ff6b08,#f0c423, #eedd44);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    z-index: 2;
+    font-size: 60px;
+    font-weight: 600;
+  }
+  .register-button{
+    font-size: 60px;
+  }
+  .club-name{
+    background: linear-gradient(to bottom, #f32170, #ff6b08,#f0c423, #eedd44);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    z-index: 2;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .day-title{
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .detail-box{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .fest-title{
+    background: linear-gradient(to bottom, #f32170, #ff6b08,#f0c423, #eedd44);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    z-index: 2;
+    font-size: 45px;
+    font-weight: 600;
+  }
+  .register-button{
+    font-size: 45px;
+  }
+  .club-name{
+    background: linear-gradient(to bottom, #f32170, #ff6b08,#f0c423, #eedd44);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .day-title{
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .detail-box{
+    font-size: 10px;
+  }
+  .date-box{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 550px){
+  .burger{
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 30px;
+    cursor: pointer;
+  }
+  .v-class{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.1s;
+  }
+  .nav-list{
+    position: absolute;
+    right: 20vw;
+    top: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-list li{
+    margin-bottom: 30px;
+  }
+  .h-nav{
+    height: 300px;
+    opacity: 0.9;
+    transition: all 1s;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .fest-title{
+    background: linear-gradient(to bottom, #f32170, #ff6b08,#f0c423, #eedd44);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    z-index: 2;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .register-button{
+    font-size: 30px;
+  }
+  .club-name{
+    background: linear-gradient(to bottom, #f32170, #ff6b08,#f0c423, #eedd44);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    z-index: 2;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .day-title{
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .detail-box{
+    font-size: 10px;
+  }
+  .s-card{
+    width: 80vw;
+  }
+  .date-box{
+    font-size: 14px;
+  }
+}
